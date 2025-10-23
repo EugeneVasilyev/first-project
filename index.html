@@ -1,396 +1,165 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-		<style>
-			body {
-				font-family: Helvetica;
-				padding: 4% 20%;
-			}
-
-
-			/*Flexbox*/
-			.row-one {
-				display: flex;
-			}
-
-			.description-one {
-				flex-basis: 50%;
-				flex-grow: 1;
-				padding-right: 5%;
-			}
-
-			.iterpic-one {
-				flex-basis: 50%;
-				flex-grow: 1;
-			}
-
-			.row-two {
-				display: flex;
-				margin-top: 1.5em;
-			}
-
-			.description-two {
-				flex-basis: 50%;
-				flex-grow: 1;
-			}
-
-			.iterpic-two {
-				flex-basis: 50%;
-				flex-grow: 1;
-			}
-
-			.row-three {
-				display: flex;
-				margin-top: 1.5em;
-			}
-      
-			.row-pics-three {
-				display: flex;
-			}
-
-			.row-pics-three img {
-				width: 95%;
-			}
-
-			.iterpic-three {
-			}
-
-			.iterpic-pics {
-			}
-
-			.advantages {
-				display: flex;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				margin-top: -1.5em;
-			}
-
-			.column {
-				flex-basis: 48%;
-        flex-wrap:wrap
-			}
-
-			.ending {
-				display: flex;
-				flex-direction: column;
-				padding: 2% 9%;
-				background-color: #8BE6EC;
-			}
-
-			.ending-text {
-				margin-top: -1em;
-			}
-
-			.footerimg {
-				text-align: center;
-			}
-
-			.footer img {
-				width: 4%;
-				padding: 0 1% 0 1%;
-			}
-
-      @media screen and (max-width:900px) {
-        body {
-          padding: 2% 5%
-        }
-        .row-one {
-          flex-wrap:wrap
-        }
-        .iterpic-one {
-          order:2;
-          margin-top:-2em;
-        }
-        
-        .row-two {
-          flex-wrap:wrap
-        }
-        .description-two {
-          margin-right:5px
-        }
-        .iterpic-two {
-          order:2;
-          margin-top:-4em;
-        }
-        
-        .preview {
-          display:none;
-        }
-        
-        @media screen and (max-width:300px) {
-        column-image img {
-          display:none;
-        }
-        
-      }
-        
-  
-      }
-      
-			/*Styles*/
-			.top-pic img {
-				width: 100%;
-        margin-top:3%;
-			}
-
-			.iterpic-one img {
-				width: 90%;
-				margin-top: 3.8em;
-			}
-
-			.iterpic-two img {
-				width: 90%;
-				margin-top: 5.2em;
-			}
-
-			.iterpic-pics img {
-				width: 95%;
-			}
-
-			.border-top {
-				border-top: 0.5px solid rgb(224, 224, 235);
-				margin-top: 1em;
-			}
-
-			.huber img {
-				width: 100%;
-			}
-      
-      .preview {
-        font-size:11px;
-        font-style:italic;
-        background-color:#ff6666;
-        padding: 1% 4%;
-
-      }
-      
-
-
-
-			#high {
-				background-color:#8BE6EC;
-			}
-
-			#red {
-				color:#ff0000;
-			}
-
-			#orange {
-				color:#ff9900;
-			}
-
-			#blue {
-				color:#0066ff;
-			}	
-
-			#green {
-				color:#00b33c;
-			}
-
-			#lead {
-				color: #bfbfbf;
-				font-style: italic;
-				margin-top: -1.2em;
-			}		
-
-		</style>
+<style>
+	body {
+		width: 60%;
+		padding-left: 45px;
+		border: 3px solid orange;
+		padding-top: 30px;
+		padding-right: 50px;
+		padding-bottom: 50px;
+	}
+	a:link {
+		color: rgb(255, 132, 211);
+		background-color: ;
+		text-decoration: none;
+	}
+	a:hover {
+		color: orange;
+		text-decoration: underline;
+	}
+	a:visited {
+		color: red;
+		text-decoration: underline;
+	}
+	.subheads {
+		font-size: 24px;
+	}
+</style>	
 </head>
+
 <body>
+<!--Соберите ХТМЛ‑страницу с собственным резюме. В резюме должны быть разделы о ваших местах работы, образовании, хобби и фотография-->
 
-<div class="preview">
-  <p>Данной темы не было в списке финальных работ Максима Ильяхова. Я выбрал её исходя из принципа "возможно всё" и несу полную ответственность за это. Если это 0 баллов, пусть будет так. Работа свёртсана в ХТМЛ с учётом адаптивного дизайна.</p>
-</div>
-  
-  
-<!--intro-->
+<!--фотка-->
 
-<div class="top-pic">
-<img src="https://imgur.com/KTePfci.gif">
+
+
+<img src="https://i.imgur.com/hDYTJDN.png" style="width:100px;height:100px;float:left;padding-top:16px;">
 </div>
 
-<div class="intro">
-<h1>10 слов за 2 месяца: сложный метод учить иностранные слова</h1>
-<p id="lead">Вам потребуются: ручка, тетрадь 48л, 10 минут утром</p>
-
-<p>Учить новые слова в иностранном языке кажется несложным делом. Это не грамматика, а гугл забит сотнями страниц с подсказками и историями успеха. В виральном видео на ютюбе девушка рассказывает<a href="https://youtu.be/qXtKaqJrWCQ" target=_blank> как учить 100 новых слов в английском каждый день.</a> Звучит неплохо. Получается, нужен всего лишь месяц, чтобы выучить 3000 слов и заговорить как носитель?</p>
-<p>Да нет.</p>
-<img src="https://i.imgur.com/abHzA3v.jpg" width=100%>
-<p>Суть "быстрых" методов часто в том, что ученик уже знает много слов в иностранном языке из-за словообразования — и это правда. Слова на -ция в русском почти всегда идентичны словам на -tion в английском: нация-nation, революция-revolution. Есть и одинаковые слова: алкоголь-alcohol. В родственных языках эта связь ещё заметнее.</p>
-<p>Да, это облегчает изучение и этим надо пользоваться. Но к сожалению, слов на -ция и одинаковых слов не хватит и вы точно не выучите 100 слов в день. Если мы начнём говорить про слова, у которых нет аналогов в иностранном языке, то задача усложняется. Реальность сложнее, чем её рисуют "волшебные" методы.</p>
-
-<!--main-->
-
-<h2>Как тогда учить слова?</h2>
-<p>Учение — труд. Осознать это — уже сделать большой шаг. Суть изучения слов не в том, чтобы понять как работает одно окончание, а в повторении.</p>
-<p>Мой метод построен на заниженных ожиданиях и монотонном повторении. Суть в интервальном повторении и идея не нова. Немец Себастьян Лейтнер <a href="https://ru.wikipedia.org/wiki/Система_Лейтнера" target=_blank>сформировал способ так учить языки в 70-х</a>, а сама концепция появилась ещё раньше, в 30-х. Я взял основную идею, подстроил под себя и предлагаю читателям. Вот её основные положения:</p>
-<ul>
-	<li>Выписывать связный текст с новыми словами на лист бумаги</li>
-	<li>Повторять этот текст в формате чтения-пересказа в течение 10 минут</li>
-	<li>Повторять каждый лист 3-4 раза, увеличивая интервал между повторениями</li>
-</ul>
-<p>Навскидку, так можно выучить минимум 500 слов в год — это если вы повторяете слова хотя бы 4-5 раз в неделю.</p>
-<p>На самом деле, вы учите больше за счёт слообразования. Если вы запомнили, что 'splendid' — роскошный, то 'splendidly' будет роскошно, 'splendour' — роскошь. Или возьмите те же слова в английском где одно слово может быть разных частей речи: 'to drink' — пить, 'a drink' — напиток.</p>
-<p>Теперь конкретно, что нужно делать.</p>
-</div>
-
-
-<div class="row-one">
-	<div class="description-one">
-<h3>Повторение 0: составьте лист</h3>
-<p>Найдите статью на интересную тему, выпишите из неё целые предложения или куски предложений. Так у вас получится текст.</p>
-<p>Не обязательно, чтобы он охватывал всю тему статьи — достаточно куска. Главное, чтобы текст был связный и понятный вам.</p>
-<p><span id="high">Подчеркните хайлайтером незнакомые слова и выражения.</span> Пробегитесь глазами по листу, на секунду останавливаясь на новых словах. <span class id="red">Отметьте на листе, что повторите его через неделю.</span></p>
-<p>Откуда вы будете брать новые слова — не важно. Важно, чтобы тема была вам интересна, а лексика потенциально полезна. Ошибка новичка часто в том, что он пытается выучить всю новую лексику. В итоге, он учит ненужные слова которые быстро забудет.</p>
-	</div>
-	<div class="iterpic-one">
-<img src="https://i.imgur.com/pPFnCQW.gif">
-	</div>
-</div>
-
-<div class="row-two">
-	<div class="iterpic-two">
-<img src="https://i.imgur.com/tPUEtSh.gif">
-	</div>
-	<div class="description-two">
-<h3>Повторение 1: перескажите текст через неделю</h3>
-<p>Сначала пробегитесь глазами по тексту чтобы вспомнить о чём он. Хотя это ваше первое повторение, сам текст вы уже читали и переписывали и имеете представление. 
-<p>Затем постарайтесь его пересказать вслух самому себе и как бы мысленно фокусируйтесь на выделенных словах.</p>
-<p>Чем меньше будете подглядывать в лист, тем лучше. Подглядывать не запрещено, но для запоминания лучше, если вы воспроизведёте текст сами.</p>
-<p>Пересказывайте текст и отдельные абзацы несколько раз, меняйте порядок текста местами, вставляйте новые слова в другие части текста — так вы много раз произнесёте новую лексику.</p>
-<p><span id="orange">В конце отметьте, что в следующий раз повторите лист через две недели.</span></p>
-	</div>
-
-</div>
-
-<div class="row-three">
-	<div class="description-three">
-<h3>Повторения 2-4: перескажите текст через две недели, месяц, два месяца</h3>
-<p>Когда перескажите текст через две недели по уже знакомой модели, отметьте, что в следующий раз повторите <span id="blue">спустя месяц</span>, <span id="green">а потом два месяца</span>.</p>
-<p>Чем дальше итерация, тем легче вам пересказывать: текст уже знаком, выделенные слова вы выучили.</p>
-<p>Если считаете, что четвёртое повторение излишнее, ограничтесь тремя. Я предпочитаю четыре для лучшего запоминания, хотя уже на третьей хорошо помню текст и новые слова. Возможно, вам хватит трёх, а то и двух повторений.</p>
-	</div>
-</div>
-
-<div class="row-pics-three">
-	<div class="iterpic-three">
-<img src="https://i.imgur.com/4lITH2y.gif">
-	</div>
-
-	<div class="iterpic-three">
-<img src="https://i.imgur.com/LCmxuWS.gif">
-	</div>
-</div>
-
-
-<div class="border-top"></div>
-
-<!--objections-->
-<h2>4 основных плюса метода</h2>
-<div class="advantages">
-
-<div class="column">
-<h3>У слов есть контекст</h3> 
-<p>Учить лексику вне контекста непрактично: слова могут иметь положительную или отрицательную окраску, иметь много значений, использоваться только в определённых выражениях.</p>
-<p>Учите слова в контексте чтобы учитывать специфику употребления и не оказаться в неловкой ситуации.</p>
-</div>
-
-<div class="column">
-<h3>Вы практикуете говорение</h3>
-<p>Чем дальше повторение, тем больше вы знакомы с текстом. Это позволяет вам с меньшим усилием воспроизводить пересказ, говорить с меньшими паузами.</p>
-<p>Да, с этим методом вы общаетесь с самим собой, но это вырабатывает в вас уверенность, даёт поработать над акцентом.</p>
-</div>
-
-<div class="column">
-<h3>Вы пишете </h3>
-<p>Научно доказано, что <a href="https://www.sciencedaily.com/releases/2011/01/110119095458.htm" target="_blank">написание помогает учить язык быстрее</a>. Когда мы пишем от руки, мы воспроизводим образы букв на бумаге. Мозг это видит как знакомый след потому что мы с детства распознаём текст. То есть, между чтением и написанием есть связь, которой надо пользоваться при изучении языка.</p>
-<p>Важно, что с набором на клавиатуре или экране такое не пройдёт ведь когда мы набираем на экране, мы не воспроизводим образы букв.</p>
-
-<h3>Вырабатывается азарт</h3>
-<p>В моём случае каждый раз рождается гонка за знанием. Каждый новый лист это вызов: хочется составлять больше листов и быстрее заканчивать старые. Такой подход подхлёстывает и создаёт соревнование с самим собой.</p>
-<p>Если вы хоть раз ходили в тренажёрный зал или на фитнесс с кем-то, или играли в футбол во дворе с друзьями, то это похожее ощущение — наличие соревнования которое подстёгивает. Только в этом случае вы соревнуетесь с собой и этого достаточно.</p>
-</div>
-
-
-
-<div class="column">
-  <div class="column-image">
-<img src="https://i.imgur.com/7GfD7hP.png" style="width: 100%;padding-left:7%;margin-top: 3.2em;">
-  </div>
-  </div>
-
-
-</div>
-
-<div class="border-top"></div>
-
-<div class="disadvantages">
-<h2>Ответы на вопросы</h2>
-
-<p><b>Кому этот метод не подойдёт?</b> Думаю, попробовать могут все, но я бы не советовал его самым-самым новичкам. Мне кажется, на начальном этапе лучше работает зубрёжка, а наиболее употребимые слова будут в упражнениях на грамматику.</p>
-
-<p><b>Сколько новых слов выписывать на лист?</b> 10-15 достаточно. Не пишите слишком много — так будете тратить много времени на лист.</p>
-
-<p><b>Что делать если пропустили день или два?</b> Не винить себя. Повторите отстающие листы в один день, например утром и вечером. Повремените с новыми листами чтобы нагнать старые.</p>
-
-<p><b>Как найти 10 минут в день на повторение?</b> Сделать это привычкой: повторяйте слова каждый день на протяжении 21 дня и посмотрите, стало ли это частью вашей рутины.</p>
-<p>Нейробиолог из Стэнфорда и одно из открытий образовательного ютюба <a href="https://youtu.be/Wcs2PFz5q6g?t=701" target=_blank> Эндрю Хюберман утверждает, что способ действенный</a>. Однако, займёт от 21 дня до 9 месяцев в зависимости от человека.</p>
-
-<div class="huber">
-<img src="https://imgur.com/PKyKbIb.gif"></img>
-</div>
-
-<p><b>Когда лучше всего повторять листы?</b>
-<p>Ставьте учение слов на самое утро. Студенты школы Бюро Горбунова знакомы с идеей <a href="https://fff.works/blog/all/current-initiative/" target=_blank>текущей инициативы</a>: большую задачу рубят на куски и делают первым делом утром; по чуть-чуть, но всегда.</p>
-<p>Ещё одна причина повторять слова как можно раньше в том, что задачи требующие концентрации лучше делать в первые 0-8 часов после пробуждения.<a href="https://youtu.be/Wcs2PFz5q6g?t=2348" target=_blank>В том же подкасте про привычки</a>, Эндрю Хюберман доказывает, что это действенно с точки зрения нейробиологии.</p>
-
-<p><b>Можно ли так учить слова в нескольких языках одновременно?</b> Да, особенно если языки не похожи. Я так учу словенский и французский. Они совершенно разные и не мешаются в голове.</p>
-
-<b>Как ещё можно ускорить изучение?</b> Чем больше в вашей жизни языка, тем лучше: смотрите новости, читайте книги, слушайте радио. Практикуйте ещё один метод запоминания слов: ассоциации, карточки, зубрёжка.</p>
-<p>Важное условие это наличие цели. Даже если ваша цель это просто хобби, она должна быть чётко выражена. Скорее всего, одного энтузиазма хватит лишь на пару месяцев.</p>
-
-
-</div>
-
-<!--conclusion-->
-<div class="ending">
-
+<!--линки на мои соцсети-->
 <div>
-<h3>Почему я пользуюсь этим методом и как оно вообще, работает?</h3>
-</div>
-
-<div class="ending-text">
-<p>Я плавно подходил к этому методу годами. Прежде я делал то же самое, но без связного текста: писал случайные предложения с незнакомым словом и повторял несколько раз.</p>
-
-<p>Проблема была в том, так у меня получалось 10-15 несвязных между собой предложений. Когда за 10 минут читаешь столько разных предложений, мозг не видит связь. Поэтому я перешёл на метод который учитывает контекст.</p>
-
-<p>Специально чтобы учить слова я купил магнитную доску куда цепляю листы. Это помогает контролировать их поток, соблюдает очерёдность.</p>
+<a href="https://www.linkedin.com/in/eugene-vasilyev/" target="_blank">
+<img src="https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg" style="float:right;width: 50px;height: 50px;margin-right; padding-top: 20px;">
+</a>
 </div>
 
 <div>
-<img src="https://i.imgur.com/v8nyX3J.jpg" width="100%">
+<a href="https://www.facebook.com/eugene.vasilev.718" target="_blank">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/768px-Facebook_icon_2013.svg.png" style="float:right;width: 50px;height: 50px; margin-right: 10px; padding-top: 20px;">
+</a>
 </div>
 
 <div>
-<p>Главное открытие метода в том, что уже на втором повторении я хорошо помню выделенные слова — они даже не кажутся незнакомыми. Здесь работает ассоциация: слова завяызваются на конкретный текст и контекст.</p>
-
-<p>Первый лист я составил летом 2021 во время чемпионата Европы по футболу. На нём был текст про то как датский футболист Кристиан Эриксен упал без сознания на поле. Тема неприятная, но у меня есть плотная ассоциация с этим текстом когда мне в словенском нужны слова "упал в обморок" (se je zgrudil), "вмешательство" (posredovanje), "srčni zastoj" (сердечный приступ), и так далее. То есть, я мгновенно вспоминаю реальную ситуацию, а не копаюсь в голове в поисках слова вне контекста.</p>
-
-<p>Попробуйте этот метод один месяц и посмотрите, насколько к вам "липнут" слова после даже двух повторений.</p>
+<a href="https://twitter.com/home" target="_blank">
+<img src="https://www.clipartmax.com/png/full/196-1967133_free-download-png-and-vector-twitter-app-icon-transparent.png" style="float:right;width: 50px;height: 50px;margin-right: 10px; padding-top:20px">
+</a>
 </div>
 
+<!--heading-->
+<h1 style="padding-left:115px;padding-top:0px;font-size:25px">Eugene Vasilev</h1>
+<h2 style="padding-left:115px;font-size:1.1em;">Copywriter, editor</h2>
+<h2 style="padding-left:115px;font-size:1.1em;">+7(987)915-67-97, 22ndhoodoo@gmail.com</h2>
+</div>
+<hr>
+
+<!--main text-->
+<div>
+	<p>Hi there! I'm an editor with an experience both writing content and managing a team of editors. I write in English, a language I've spoken for 11 years.
+	<p>I may be especially useful to you if you write about football. 
+	I have a wealth of experience writing about football so I will be useful if you need a content writer or manager for your team</p>
 </div>
 
-<!--footer-->
-<p style="text-align: center;font-style: italic;font-size: 13px;">Пишите, если хотите пообщаться на английском, французском, словенском.</p>
-<div class="footer">
-	<div class="footerimg">
-		<a href="https://twitter.com/takeonebow" target=_blank><img src="https://i.imgur.com/IPquC0G.png"></a>
-		<a href="https://t.me/where_is_my_tractor" target=_blank><img src="https://i.imgur.com/pTM9rvZ.png"></a>
-	</div>
+<hr>
+
+<div>
+<h2>Work Experience, key responsibilities</h2>
 </div>
+
+<div>
+<p><i class="subheads">Senior editor at Tribuna Digital</i><span style="border: 1px solid black;background-color: lightgrey;float: right;padding:5px">October 2019-present</span></p>
+</div>
+<div>
+		<p><b>Monitoring hot topics</b>. I guide writers through by picking content I find clickable or useful.</p>
+		<p><b>Maintaining work standards</b>. This includes me fact-checking big articles, checking spelling, grammar and overall content value. 1-2 times a month I conduct a workshop for the team: I pick a post, the writers find good and bad things about it, then I sum it up with my input.</p>
+		<p><b>Proposing new ideas</b>. At least once a month we try something new in the newsfeed. 4 big ideas entered our 'skillset' in 2021.</p>
+</div>
+
+
+<div style="margin-top: 33px;">
+	<p><i class="subheads">Content writer at Tribuna Digital</i><span style="border: 1px solid black;background-color: lightgrey;float: right;padding:5px">May 2017-October 2019</span><p>	
+	<p><b>Monitoring the agenda</b>. Since my main task was to fill the newsfeed with interesting stories I had plenty of time to train the eye for potentially viral stories</p>
+	<p><b>Writing posts</b>. As a writer, I used to work 5-6 shifts weekly -- at least 40 hours of writing in English per week. This boosted my language skills and the pace of writing.</p>
+	<p><b>Packaging posts</b>. This had to do writing a clickable hooks-laden headlines and creating appealing title pics. Since we use collages and 'fancy' multi-layered pics I learnt basic Photoshop.</p>
+	
+	<table>
+		<caption><i>Links to my best content at Tribuna</i></caption>
+		<tr>
+			<td><a href="https://tribuna.com/en/blogs/9d6d02ae-a541-49f4-871d-164acb8ffcf8/" target="_blank">Alexis Sanchez is not a snake: Why he's not to blame for United failure and who the real culprit was</a></td>
+			<td><a href="https://tribuna.com/en/blogs/574fa7de-54b3-4c52-ad81-f27e4f58d99d/" target="_blank">Newcastle potential XI 'revealed' as £260bn new owners stepping in</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://tribuna.com/en/blogs/a0d812fb-1f87-4f88-9768-4532cdf5408c/" target="_blank">3 mash-up Man United super teams from three eras – who will win?</a></td>
+			<td><a href="https://tribuna.com/en/news/manutd-2020-04-13-fergusons-treble-winners-vs-klopps-current-best-xi-heres-whod-win-and-why/" target="_blank">Ferguson's treble winners vs Klopp's current best XI: Here's who'd win and why</a></td>
+		</tr>
+		<tr>
+			<td><a href="https://tribuna.com/en/blogs/cd388f04-5bd0-4350-a10c-1e9a8d083937/" target="_blank">Football matters. Ask Albert Camus why</a></td>					
+			<td><a href="https://tribuna.com/en/blogs/4b4b7e94-de4b-4e33-a1ed-c0908d45c72e/" target="_blank">Nemanja Matic's brilliance vs Sheff Utd explained</a></td>
+
+		</tr>
+	</table>
+</div>
+
+<div style="margin-top: 33px;">
+	<p><i class="subheads">Copywriter at Unisender</i><span style="border: 1px solid black;background-color: lightgrey;float: right;padding:5px">October 2021-present</span></p>
+		<p><b>Writing long-reads in accordance with statement of work</b>. I started off with little knowledge about email marketing but made progress with each new article. Each new task has SEO requirements but articles allow freedom in constructing the narration. This way, I can shape texts the most useful way for readers.</p>
+		<p><b>Doing research</b>. Email marketing is often about separating bullshit info from real stuff. Each article requires reading a lot before writing a word.</p>
+		<p><b>Making quizzes</b>. As a way to make fun content for the blog, I occasionally make quizzes.</p>
+		
+	<table style="width:100%">
+		<caption><i>Links to all my content at Unisender</i></caption>
+		<tr>
+			<td><a href="https://www.unisender.com/en/blog/email-countdown-gif/" target="_blank">Countdown Timer GIF Best Practices</td>
+			<td><a href="https://www.unisender.com/en/blog/author/e-vasiliev/" target="_blank">Best Email Marketing Blogs That Are Worth Your Attention</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.unisender.com/en/blog/abandoned-cart-emails/" target="_blank">Best Abandoned Cart Emails Reviewed</td>
+			<td><a href="https://www.unisender.com/en/blog/if-you-were-an-email-which-kind/" target="_target">If you were an email …. which kind?</td>
+		</tr>
+		<tr>
+			<td><a href="https://www.unisender.com/en/blog/personalized-email-marketing/" target="_blank">Best Email Personalization Techniques to Try Out in 2021</td>
+			<td><a href="https://www.unisender.com/en/blog/christmas-quiz/" target="_blank">Naughty or Nice: Which Kind of Email Marketer Have You Been This Year?</td>
+		</tr>
+	</table>
+</div>
+
+<br>
+<hr>
+
+<h2>Education</h2>
+<p><i>Gorbunov's Bureau School (2021-)</i></p>
+<p>Faculty of text editing</p>
+<hr style="border-top: dotted 2px;">
+
+
+<p><i>Master's at Samara State Academy of Social Sciences and Humanities (2016-2018)</i></p>
+<p>Faculty of translation in international communication</p>
+<hr style="border-top: dotted 2px;">
+
+<p><i>Bachelor's at Volga State University of Telecommunications and Informatics (2012-2016)</i></p>
+<p>Faculty of informational systems and technologies</p>
+<hr style="font-weight: bolder;">
+
+<h2>Hobbies</h2>
+<p><b>Languages</b>. I speak fluent English, upper-intermediate French and conversational Slovene. While English is for work, the other two are spare-time fun.</p>
+<p><b>Text editing</b>. It happens so that my job combines two things I love: football and editing.</p>
+<p><b>Reading</b>. I used to read non-fiction mostly but now I'm more keen on professional literature on text editing and design.</p>
+<p><b>Gym</b>. 3-4 times a week, no giving up, no slacking off.</p>
+
+
 
 </body>
 </html>
+
